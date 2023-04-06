@@ -7,6 +7,5 @@ function monitor(manager) {
 
 navigator.getBattery().then((manager) => {
 	monitor(manager);
-   
-   manager.onlevelchange = () => { monitor(manager); };
+	manager.onlevelchange = () => { monitor(manager); };
 });
